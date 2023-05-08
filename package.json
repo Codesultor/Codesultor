@@ -2,6 +2,7 @@
   "name": "codesultor",
   "private": true,
   "scripts": {
+    "dev": "pnpm -r dev",
     "test:types": "pnpm -r test:types",
     "test:prettier": "prettier --check .",
     "format": "prettier --write ."
