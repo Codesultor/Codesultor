@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "pnpm -r dev",
+    "test:eslint": "pnpm -r test:eslint",
     "test:prettier": "prettier --check .",
     "test:types": "pnpm -r test:types",
     "format": "pnpm format:prettier && pnpm format:eslint",
