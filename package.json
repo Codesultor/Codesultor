@@ -1,5 +1,13 @@
 {
   "name": "codesultor",
   "private": true,
-  "scripts": {}
+  "scripts": {
+    "test:prettier": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/prettier": "^2.7.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-jsdoc": "^0.4.2"
+  }
 }
