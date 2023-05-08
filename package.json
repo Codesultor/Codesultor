@@ -3,9 +3,11 @@
   "private": true,
   "scripts": {
     "dev": "pnpm -r dev",
-    "test:types": "pnpm -r test:types",
     "test:prettier": "prettier --check .",
-    "format": "prettier --write ."
+    "test:types": "pnpm -r test:types",
+    "format": "pnpm format:prettier && pnpm format:eslint",
+    "format:eslint": "pnpm run -r format:eslint",
+    "format:prettier": "prettier --write ."
   },
   "devDependencies": {
     "@types/prettier": "^2.7.2",

@@ -5,7 +5,9 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "test:types": "tsc"
+    "test:types": "tsc",
+    "test:eslint": "eslint .",
+    "format:eslint": "eslint --fix ."
   },
   "dependencies": {
     "@remix-run/css-bundle": "^1.16.0",
@@ -21,6 +23,7 @@
     "@remix-run/eslint-config": "^1.16.0",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
+    "eslint-config-prettier": "^8.8.0",
     "typescript": "^5.0.4"
   },
   "engines": {
