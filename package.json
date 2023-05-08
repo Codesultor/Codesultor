@@ -2,7 +2,7 @@
   "name": "codesultor",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r dev",
+    "dev": "pnpm -r --parallel dev",
     "test": "pnpm test:eslint && pnpm test:prettier && pnpm test:types",
     "test:eslint": "pnpm -r test:eslint",
     "test:prettier": "prettier --check .",
@@ -16,5 +16,5 @@
     "prettier": "^2.8.8",
     "prettier-plugin-jsdoc": "^0.4.2"
   },
-  "packageManager": "pnpm@8.3.1"
+  "packageManager": "pnpm@8.4.0"
 }
