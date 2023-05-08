@@ -20,10 +20,10 @@
   },
   "devDependencies": {
     "@remix-run/dev": "^1.16.0",
-    "@remix-run/eslint-config": "^1.16.0",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint": "^8.40.0",
+    "eslint-config-codesultor": "workspace:*",
     "typescript": "^5.0.4"
   },
   "engines": {
