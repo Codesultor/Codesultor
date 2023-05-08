@@ -13,16 +13,5 @@ module.exports = {
       { prefer: "type-imports", fixStyle: "inline-type-imports" },
     ],
     "import/consistent-type-specifier-style": ["error", "prefer-inline"],
-    "import/order": [
-      "error",
-      {
-        groups: ["builtin", "external", "internal"],
-        alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
-        },
-        "newlines-between": "never",
-      },
-    ],
   },
 };

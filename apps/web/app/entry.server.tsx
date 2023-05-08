@@ -4,7 +4,6 @@
  * again, you can run `npx remix reveal` ✨ For more information, see
  * https://remix.run/file-conventions/entry.server
  */
-
 import { PassThrough } from "node:stream";
 import { type EntryContext } from "@remix-run/node";
 import { Response } from "@remix-run/node";
