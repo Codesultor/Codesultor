@@ -12,9 +12,12 @@
     "format:prettier": "prettier --write ."
   },
   "devDependencies": {
+    "@types/eslint": "^8.37.0",
     "@types/prettier": "^2.7.2",
+    "eslint": "^8.40.0",
     "prettier": "^2.8.8",
-    "prettier-plugin-jsdoc": "^0.4.2"
+    "prettier-plugin-jsdoc": "^0.4.2",
+    "typescript": "^5.0.4"
   },
   "packageManager": "pnpm@8.4.0"
 }
