@@ -12,6 +12,9 @@
     "format:eslint": "pnpm run -r format:eslint",
     "format:prettier": "prettier --write packages/database/prisma/schema.prisma ."
   },
+  "dependencies": {
+    "tslib": "^2.5.0"
+  },
   "devDependencies": {
     "@types/eslint": "^8.37.0",
     "@types/prettier": "^2.7.2",

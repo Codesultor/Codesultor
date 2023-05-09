@@ -1,3 +1,9 @@
 node_modules/
+
+.turbo/
+build/
+.cache/
 *.log
+.tsbuildinfo
+
 .env

@@ -5,7 +5,7 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "test:types": "tsc",
+    "test:types": "tsc --noEmit",
     "test:eslint": "eslint .",
     "format:eslint": "eslint --fix ."
   },
