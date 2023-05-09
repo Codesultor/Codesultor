@@ -1,17 +1,22 @@
 {
   "name": "database",
   "private": true,
-  "main": "./index.ts",
-  "types": "./index.ts",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
   "scripts": {
     "postinstall": "prisma generate",
-    "dev": "prisma studio",
-    "db:push": "prisma db push"
+    "build": "tsc",
+    "dev": "prisma studio --browser none",
+    "db:push": "prisma db push",
+    "test:eslint": "eslint .",
+    "test:types": "tsc --noEmit",
+    "format:eslint": "eslint --fix ."
   },
   "dependencies": {
     "@prisma/client": "^4.13.0"
   },
   "devDependencies": {
-    "prisma": "^4.13.0"
+    "prisma": "^4.13.0",
+    "tsconfig": "workspace:*"
   }
 }

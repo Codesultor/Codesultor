@@ -2,22 +2,29 @@
   "name": "codesultor",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r --parallel dev",
-    "test": "pnpm test:eslint && pnpm test:prettier && pnpm test:types",
-    "test:eslint": "pnpm -r test:eslint",
-    "test:prettier": "prettier --check packages/database/prisma/schema.prisma .",
-    "test:types": "pnpm -r test:types",
-    "format": "pnpm format:eslint && pnpm format:prettier",
-    "format:eslint": "pnpm run -r format:eslint",
-    "format:prettier": "prettier --write packages/database/prisma/schema.prisma ."
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo test:eslint test:prettier test:types",
+    "test:eslint": "turbo test:eslint",
+    "test:prettier": "turbo test:prettier",
+    "test:types": "turbo test:types",
+    "format": "turbo format:eslint format:prettier",
+    "format:eslint": "turbo format:eslint",
+    "format:prettier": "turbo format:prettier"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0"
   },
   "devDependencies": {
     "@types/eslint": "^8.37.0",
     "@types/prettier": "^2.7.2",
     "eslint": "^8.40.0",
+    "eslint-config-custom": "workspace:*",
     "prettier": "^2.8.8",
     "prettier-plugin-jsdoc": "^0.4.2",
     "prettier-plugin-prisma": "^4.13.0",
+    "tsconfig": "workspace:*",
+    "turbo": "^1.9.3",
     "typescript": "^5.0.4"
   },
   "packageManager": "pnpm@8.4.0"

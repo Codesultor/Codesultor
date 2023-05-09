@@ -5,7 +5,7 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "test:types": "tsc",
+    "test:types": "tsc --noEmit",
     "test:eslint": "eslint .",
     "format:eslint": "eslint --fix ."
   },
@@ -21,9 +21,9 @@
   },
   "devDependencies": {
     "@remix-run/dev": "^1.16.0",
+    "@types/node": "^20.1.1",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
-    "eslint-config-codesultor": "workspace:*",
     "tailwindcss": "^3.3.2"
   },
   "engines": {

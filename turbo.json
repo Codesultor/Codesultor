@@ -1,0 +1,32 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "dummy": {
+      "dependsOn": ["^dummy"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["build/**"]
+    },
+    "test:eslint": {
+      "dependsOn": ["^dummy"]
+    },
+    "test:prettier": {
+      "dependsOn": ["^dummy"]
+    },
+    "test:types": {
+      "dependsOn": ["^build"]
+    },
+    "format:eslint": {
+      "dependsOn": ["^dummy"]
+    },
+    "format:prettier": {
+      "dependsOn": ["^dummy"]
+    }
+  }
+}
