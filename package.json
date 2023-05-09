@@ -4,11 +4,11 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "test": "turbo test",
+    "test": "turbo test:eslint test:prettier",
     "test:eslint": "turbo test:eslint",
     "test:prettier": "turbo test:prettier",
     "test:types": "turbo test:types",
-    "format": "turbo format",
+    "format": "turbo format:eslint format:prettier",
     "format:eslint": "turbo format:eslint",
     "format:prettier": "turbo format:prettier"
   },
