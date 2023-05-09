@@ -9,6 +9,11 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["build/**"]
-    }
+    },
+    "test:types": {
+      "dependsOn": ["^build"]
+    },
+    "test:eslint": {},
+    "format:eslint": {}
   }
 }
