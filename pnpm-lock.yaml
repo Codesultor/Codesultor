@@ -75,6 +75,9 @@ importers:
       tailwindcss:
         specifier: ^3.3.2
         version: 3.3.2
+      tsconfig:
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
 
   packages/database:
     dependencies:
