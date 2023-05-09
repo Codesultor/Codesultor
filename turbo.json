@@ -1,6 +1,9 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
+    "dummy": {
+      "dependsOn": ["^dummy"]
+    },
     "dev": {
       "cache": false,
       "persistent": true,
@@ -10,12 +13,20 @@
       "dependsOn": ["^build"],
       "outputs": ["build/**"]
     },
-    "test:eslint": {},
-    "test:prettier": {},
+    "test:eslint": {
+      "dependsOn": ["^dummy"]
+    },
+    "test:prettier": {
+      "dependsOn": ["^dummy"]
+    },
     "test:types": {
       "dependsOn": ["^build"]
     },
-    "format:eslint": {},
-    "format:prettier": {}
+    "format:eslint": {
+      "dependsOn": ["^dummy"]
+    },
+    "format:prettier": {
+      "dependsOn": ["^dummy"]
+    }
   }
 }
