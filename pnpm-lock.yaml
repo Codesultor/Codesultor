@@ -37,7 +37,7 @@ importers:
     dependencies:
       '@remix-run/css-bundle':
         specifier: ^1.16.0
-        version: 1.16.0(@remix-run/serve@1.16.0)
+        version: 1.16.0(@remix-run/serve@1.16.0)(@types/node@20.1.1)
       '@remix-run/node':
         specifier: ^1.16.0
         version: 1.16.0
@@ -62,7 +62,10 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^1.16.0
-        version: 1.16.0(@remix-run/serve@1.16.0)
+        version: 1.16.0(@remix-run/serve@1.16.0)(@types/node@20.1.1)
+      '@types/node':
+        specifier: ^20.1.1
+        version: 20.1.1
       '@types/react':
         specifier: ^18.0.35
         version: 18.0.35
@@ -1554,10 +1557,10 @@ packages:
     resolution: {integrity: sha512-12dZRXW36s3hRHLeD8c4S3o1ZZcnFt1NxhBrSlYepnMxatfkj5S8aIDP/G+zzUqucB//kGZZWNX3eUcmxMsEqw==}
     dev: true
 
-  /@remix-run/css-bundle@1.16.0(@remix-run/serve@1.16.0):
+  /@remix-run/css-bundle@1.16.0(@remix-run/serve@1.16.0)(@types/node@20.1.1):
     resolution: {integrity: sha512-N8CgYGJNpdtyd4enuY0UIje+rHvDEPCxXnkAJ6ggTvoSM4c919e5LXUWM5o67NAbdBAYQfqQO/EknL3D/dSw7w==}
     dependencies:
-      '@remix-run/dev': 1.16.0(@remix-run/serve@1.16.0)
+      '@remix-run/dev': 1.16.0(@remix-run/serve@1.16.0)(@types/node@20.1.1)
     transitivePeerDependencies:
       - '@remix-run/serve'
       - '@types/node'
@@ -1574,7 +1577,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@remix-run/dev@1.16.0(@remix-run/serve@1.16.0):
+  /@remix-run/dev@1.16.0(@remix-run/serve@1.16.0)(@types/node@20.1.1):
     resolution: {integrity: sha512-mA5Wv8sOgN3pSZvjn22aEu+O+uz2/qkgRvB5RnXWncPtvOq8dMmGH7J9kvKO/iOF8btK5FaudymK+AjM6Yifag==}
     engines: {node: '>=14'}
     hasBin: true
@@ -1596,7 +1599,7 @@ packages:
       '@npmcli/package-json': 2.0.0
       '@remix-run/serve': 1.16.0
       '@remix-run/server-runtime': 1.16.0
-      '@vanilla-extract/integration': 6.2.1
+      '@vanilla-extract/integration': 6.2.1(@types/node@20.1.1)
       arg: 5.0.2
       cacache: 15.3.0
       chalk: 4.1.2
@@ -1778,7 +1781,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 20.1.0
+      '@types/node': 20.1.1
       '@types/responselike': 1.0.0
 
   /@types/debug@4.1.7:
@@ -1810,7 +1813,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.1.0
+      '@types/node': 20.1.1
 
   /@types/hast@2.3.4:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}
@@ -1830,7 +1833,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 20.1.0
+      '@types/node': 20.1.1
 
   /@types/mdast@3.0.11:
     resolution: {integrity: sha512-Y/uImid8aAwrEA24/1tcRZwpxX3pIFTSilcNDKSPn+Y2iDywSEachzRuvgAYYLR3wpGXAsMbv5lvKLDZLeYPAw==}
@@ -1846,8 +1849,8 @@ packages:
   /@types/ms@0.7.31:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
 
-  /@types/node@20.1.0:
-    resolution: {integrity: sha512-O+z53uwx64xY7D6roOi4+jApDGFg0qn6WHcxe5QeqjMaTezBO/mxdfFXIVAVVyNWKx84OmPB3L8kbVYOTeN34A==}
+  /@types/node@20.1.1:
+    resolution: {integrity: sha512-uKBEevTNb+l6/aCQaKVnUModfEMjAl98lw2Si9P5y4hLu9tm6AlX2ZIoXZX6Wh9lJueYPrGPKk5WMCNHg/u6/A==}
 
   /@types/prettier@2.7.2:
     resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
@@ -1874,7 +1877,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 20.1.0
+      '@types/node': 20.1.1
 
   /@types/scheduler@0.16.3:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
@@ -2039,7 +2042,7 @@ packages:
       media-query-parser: 2.0.2
       outdent: 0.8.0
 
-  /@vanilla-extract/integration@6.2.1:
+  /@vanilla-extract/integration@6.2.1(@types/node@20.1.1):
     resolution: {integrity: sha512-+xYJz07G7TFAMZGrOqArOsURG+xcYvqctujEkANjw2McCBvGEK505RxQqOuNiA9Mi9hgGdNp2JedSa94f3eoLg==}
     dependencies:
       '@babel/core': 7.21.8
@@ -2053,8 +2056,8 @@ packages:
       lodash: 4.17.21
       mlly: 1.2.0
       outdent: 0.8.0
-      vite: 4.3.5
-      vite-node: 0.28.5
+      vite: 4.3.5(@types/node@20.1.1)
+      vite-node: 0.28.5(@types/node@20.1.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6341,7 +6344,7 @@ packages:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  /vite-node@0.28.5:
+  /vite-node@0.28.5(@types/node@20.1.1):
     resolution: {integrity: sha512-LmXb9saMGlrMZbXTvOveJKwMTBTNUH66c8rJnQ0ZPNX+myPEol64+szRzXtV5ORb0Hb/91yq+/D3oERoyAt6LA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -6353,7 +6356,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.3.5
+      vite: 4.3.5(@types/node@20.1.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6363,7 +6366,7 @@ packages:
       - supports-color
       - terser
 
-  /vite@4.3.5:
+  /vite@4.3.5(@types/node@20.1.1):
     resolution: {integrity: sha512-0gEnL9wiRFxgz40o/i/eTBwm+NEbpUeTWhzKrZDSdKm6nplj+z4lKz8ANDgildxHm47Vg8EUia0aicKbawUVVA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6388,6 +6391,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.1.1
       esbuild: 0.17.6
       postcss: 8.4.23
       rollup: 3.21.5
