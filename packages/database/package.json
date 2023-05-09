@@ -5,6 +5,7 @@
   "types": "./index.ts",
   "scripts": {
     "postinstall": "prisma generate",
+    "dev": "prisma studio",
     "db:push": "prisma db push"
   },
   "dependencies": {
