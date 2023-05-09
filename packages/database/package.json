@@ -1,5 +1,16 @@
 {
   "name": "database",
   "private": true,
-  "scripts": {}
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push --skip-generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.13.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.13.0"
+  }
 }
