@@ -8,7 +8,9 @@
     "build": "tsc",
     "dev": "prisma studio --browser none",
     "db:push": "prisma db push",
-    "test:types": "tsc --noEmit"
+    "test:eslint": "eslint .",
+    "test:types": "tsc --noEmit",
+    "format:eslint": "eslint --fix ."
   },
   "dependencies": {
     "@prisma/client": "^4.13.0"
