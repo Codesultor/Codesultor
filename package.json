@@ -4,13 +4,13 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "test": "pnpm test:eslint && pnpm test:prettier && pnpm test:types",
+    "test": "turbo test",
     "test:eslint": "turbo test:eslint",
-    "test:prettier": "prettier --check packages/database/prisma/schema.prisma .",
+    "test:prettier": "turbo test:prettier",
     "test:types": "turbo test:types",
-    "format": "pnpm format:eslint && pnpm format:prettier",
+    "format": "turbo format",
     "format:eslint": "turbo format:eslint",
-    "format:prettier": "prettier --write packages/database/prisma/schema.prisma ."
+    "format:prettier": "turbo format:prettier"
   },
   "dependencies": {
     "tslib": "^2.5.0"

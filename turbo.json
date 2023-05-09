@@ -10,10 +10,14 @@
       "dependsOn": ["^build"],
       "outputs": ["build/**"]
     },
+    "test": {},
+    "test:eslint": {},
+    "test:prettier": {},
     "test:types": {
       "dependsOn": ["^build"]
     },
-    "test:eslint": {},
-    "format:eslint": {}
+    "format": {},
+    "format:eslint": {},
+    "format:prettier": {}
   }
 }

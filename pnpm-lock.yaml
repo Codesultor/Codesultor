@@ -120,6 +120,8 @@ importers:
         specifier: ^8.37.0
         version: 8.37.0
 
+  packages/scripts: {}
+
   packages/tsconfig: {}
 
 packages:

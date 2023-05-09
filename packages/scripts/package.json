@@ -1,0 +1,10 @@
+{
+  "name": "scripts",
+  "private": true,
+  "scripts": {
+    "test": "turbo run test:eslint && turbo run test:prettier && turbo run test:types",
+    "test:prettier": "prettier --ignore-path ../../.prettierignore --check ../../packages/database/prisma/schema.prisma ../../",
+    "format": "turbo run format:eslint && turbo run format:prettier",
+    "format:prettier": "prettier --ignore-path ../../.prettierignore --write ../../packages/database/prisma/schema.prisma ../../"
+  }
+}
