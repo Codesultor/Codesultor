@@ -2,6 +2,7 @@
   "name": "codesultor",
   "private": true,
   "scripts": {
+    "build": "turbo build",
     "dev": "turbo dev",
     "test": "pnpm test:eslint && pnpm test:prettier && pnpm test:types",
     "test:eslint": "pnpm -r test:eslint",
