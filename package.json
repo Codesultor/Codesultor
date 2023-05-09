@@ -2,7 +2,7 @@
   "name": "codesultor",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r --parallel dev",
+    "dev": "turbo dev",
     "test": "pnpm test:eslint && pnpm test:prettier && pnpm test:types",
     "test:eslint": "pnpm -r test:eslint",
     "test:prettier": "prettier --check packages/database/prisma/schema.prisma .",
