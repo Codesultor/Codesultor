@@ -4,7 +4,7 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "test": "turbo test:eslint test:prettier",
+    "test": "turbo test:eslint test:prettier test:types",
     "test:eslint": "turbo test:eslint",
     "test:prettier": "turbo test:prettier",
     "test:types": "turbo test:types",
