@@ -77,7 +77,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - pnpm run test:prettier
+      - run: pnpm run test:prettier
 
    prisma-format:
     runs-on: ubuntu-latest
