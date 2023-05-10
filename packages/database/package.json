@@ -10,7 +10,8 @@
     "db:push": "prisma db push",
     "test:eslint": "eslint .",
     "test:types": "tsc --noEmit",
-    "format:eslint": "eslint --fix ."
+    "format:eslint": "eslint --fix .",
+    "format:prisma": "prisma format"
   },
   "dependencies": {
     "@prisma/client": "^4.13.0"
