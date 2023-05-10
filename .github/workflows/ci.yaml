@@ -79,7 +79,7 @@ jobs:
 
       - run: pnpm run test:prettier
 
-   prisma-format:
+  prisma-format:
     runs-on: ubuntu-latest
     name: Prisma Format
     steps:
