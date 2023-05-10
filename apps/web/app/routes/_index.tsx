@@ -8,17 +8,17 @@ export const meta: V2_MetaFunction = () => {
 
 export const loader = async () => {
   return json({
-    test: await db.temp.count(),
+    usersCount: await db.user.count(),
   });
 };
 
 export default function Index() {
-  const data = useLoaderData<typeof loader>();
+  const { usersCount } = useLoaderData<typeof loader>();
 
   return (
     <div>
       <h1 className="text-blue-600">Codesultor</h1>
-      <p>{data.test}</p>
+      <p>we have {usersCount} users!</p>
     </div>
   );
 }

@@ -26,9 +26,6 @@ importers:
       prettier-plugin-jsdoc:
         specifier: ^0.4.2
         version: 0.4.2(prettier@2.8.8)
-      prettier-plugin-prisma:
-        specifier: ^4.13.0
-        version: 4.13.0(prettier@2.8.8)
       tsconfig:
         specifier: workspace:*
         version: link:packages/tsconfig
@@ -1554,10 +1551,6 @@ packages:
   /@prisma/engines@4.13.0:
     resolution: {integrity: sha512-HrniowHRZXHuGT9XRgoXEaP2gJLXM5RMoItaY2PkjvuZ+iHc0Zjbm/302MB8YsPdWozAPHHn+jpFEcEn71OgPw==}
     requiresBuild: true
-
-  /@prisma/prisma-fmt-wasm@4.13.0-52.integration-mobc-upstream-d100a9299fcb9cffb064301998e9a94ce2722c49:
-    resolution: {integrity: sha512-12dZRXW36s3hRHLeD8c4S3o1ZZcnFt1NxhBrSlYepnMxatfkj5S8aIDP/G+zzUqucB//kGZZWNX3eUcmxMsEqw==}
-    dev: true
 
   /@remix-run/css-bundle@1.16.0(@remix-run/serve@1.16.0)(@types/node@20.1.1):
     resolution: {integrity: sha512-N8CgYGJNpdtyd4enuY0UIje+rHvDEPCxXnkAJ6ggTvoSM4c919e5LXUWM5o67NAbdBAYQfqQO/EknL3D/dSw7w==}
@@ -5270,16 +5263,6 @@ packages:
       prettier: 2.8.8
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /prettier-plugin-prisma@4.13.0(prettier@2.8.8):
-    resolution: {integrity: sha512-bnOWoQTVXM9VWBErPGE6rVgI8kCQts+DMQolg7Sj/Q0/oAlpDYOhce4ljQKf5BhJW061yrB3+CRVps6tNcUkQg==}
-    engines: {node: '>=14', npm: '>=8'}
-    peerDependencies:
-      prettier: '>=2'
-    dependencies:
-      '@prisma/prisma-fmt-wasm': 4.13.0-52.integration-mobc-upstream-d100a9299fcb9cffb064301998e9a94ce2722c49
-      prettier: 2.8.8
     dev: true
 
   /prettier@2.7.1:

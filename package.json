@@ -8,9 +8,10 @@
     "test:eslint": "turbo test:eslint",
     "test:prettier": "turbo test:prettier",
     "test:types": "turbo test:types",
-    "format": "turbo format:eslint format:prettier",
+    "format": "turbo format:eslint format:prettier format:prisma",
     "format:eslint": "turbo format:eslint",
-    "format:prettier": "turbo format:prettier"
+    "format:prettier": "turbo format:prettier",
+    "format:prisma": "turbo format:prisma"
   },
   "dependencies": {
     "tslib": "^2.5.0"
@@ -22,7 +23,6 @@
     "eslint-config-custom": "workspace:*",
     "prettier": "^2.8.8",
     "prettier-plugin-jsdoc": "^0.4.2",
-    "prettier-plugin-prisma": "^4.13.0",
     "tsconfig": "workspace:*",
     "turbo": "^1.9.3",
     "typescript": "^5.0.4"
